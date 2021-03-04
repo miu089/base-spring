@@ -1,0 +1,90 @@
+.container {
+  padding-bottom: 100px; /* .footerの高さに合わせる(スクロール対策) */
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  padding: 15px;
+  background-color: #b22222;
+  margin-bottom: 20px;
+}
+
+.header-text {
+  color: #fff;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px; /* .containerの高さに合わせる(スクロール対策) */
+  padding: 40px 0;
+  text-align: center;
+  background-color: #b22222;
+}
+
+.footer-text {
+  color: #fff;
+}
+
+.panel {
+  width:100%;
+  padding: 0%;
+  margin-bottom: 50px;
+  border: 6px solid #e7e7e7;
+}
+
+
+.panel-body {
+  /*border:solid #000000;/* 確認用 */
+  width:100%;
+  padding: 5%;
+  margin-bottom: 10px;
+  border-top: 1px solid #e7e7e7;
+}
+
+.panel .panel-header {
+  /*border:solid #000000;/* 確認用 */
+  padding: 1%;
+  margin-bottom: 10px;
+}
+
+.panel-footer {
+  /*border:solid #000000;/* 確認用 */
+  padding: 1%;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.vertical-middle {
+  vertical-align: middle;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.text-start {
+  text-align: left;
+}
+
+.bold{
+  font-weight:bold;
+}
+
+.red {
+  color:#ff0000;
+}
+
+.underline {
+  text-decoration: underline;
+}

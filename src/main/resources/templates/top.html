@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layout/head::base_head"></head>
+
+<body>
+<header th:replace="layout/header::base_header"></header>
+
+
+<div class="container">
+  <section class="section">
+    <div class="panel">
+
+      <div class="panel-header">
+        <form class="form-signin" th:action="@{/logout}" method="post">
+          <div class="text-right">
+            <div class="d-inline">
+              <button class="btn btn-danger btn-sm" type="submit">ログアウト</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="panel-body">
+        <span class="underline">装飾したときのイメージ</span><br/>
+        ・<span class="bold">太字</span><br/>
+        ・<span class="red">赤文字</span><br/>
+        ・<span class="underline">下線</span><br/>
+        ・<span class="bold red underline">太字・赤文字・下線</span><br/>
+        <br/>
+      </div>
+
+      <div class="panel-body">
+        コンテンツ2
+      </div>
+
+      <div class="panel-body">
+        コンテンツ3
+      </div>
+
+      <div class="panel-body">
+        コンテンツ3
+      </div>
+
+      <div class="panel-body">
+        コンテンツ3
+      </div>
+
+      <div class="panel-body">
+        コンテンツ3
+      </div>
+
+      <div class="panel-footer">
+        コンテンツフッター(ボタンとかの配置)
+      </div>
+    </div>
+
+  </section>
+</div>
+
+
+<footer th:replace="layout/footer::base_footer"></footer>
+</body>
+</html>

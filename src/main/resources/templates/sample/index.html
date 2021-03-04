@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.w3.org/1999/html">
+  <head>
+    <title>sample page</title>
+  </head>
+
+  <body>
+    <p>sample page.</p>
+
+    <p>DBのデータを表示する</p>
+    <th:block th:each="testTable : ${testTableList}">
+      <span>[[${testTable.name}]]</span>,
+    </th:block>
+  </body>
+</html>

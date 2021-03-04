@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layout/head::base_head"></head>
+
+<body>
+<header th:replace="layout/header::base_header"></header>
+
+<div class="container col-md-6">
+  <section>
+    <div class="panel">
+
+      <div class="panel-body">
+        <form class="form-signin" th:action="@{/sign_in}" method="post">
+          <div th:if="${showErrorMsg}" class="alert alert-danger" role="alert" th:text="${errorMsg}"></div>
+          <div th:if="${showLogoutedMsg}" class="alert alert-success" role="alert" th:text="#{show.logout}"></div>
+
+          <p>
+            <input type="text" id="loginId" name="loginId"
+                   class="form-control"
+                   placeholder="ユーザID"
+                   required>
+          </p>
+
+          <p>
+            <input type="password" id="password" name="password"
+                   class="form-control"
+                   placeholder="パスワード"
+                   autocomplete="on"
+                   required>
+          </p>
+
+          <button class="btn btn-danger btn-lg btn-block" type="submit">
+            ログイン
+          </button>
+
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer th:replace="layout/footer::base_footer"></footer>
+</body>
+</html>

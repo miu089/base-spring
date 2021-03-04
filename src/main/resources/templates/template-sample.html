@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layout/head::base_head"></head>
+
+<body>
+<header th:replace="layout/header::base_header"></header>
+
+
+<div class="container col-md-6">
+  <section>
+    <div class="panel">
+      <div class="panel-header">
+        <h3 class="title">
+          タイトル
+        </h3>
+      </div>
+
+      <div class="panel-body">
+        コンテンツ1
+      </div>
+
+      <div class="panel-body">
+        コンテンツ2
+      </div>
+
+      <div class="panel-footer">
+        <a th:href="@{/top}">
+          戻る
+        </a>
+      </div>
+    </div>
+
+  </section>
+</div>
+
+
+<footer th:replace="layout/footer::base_footer"></footer>
+</body>
+</html>
